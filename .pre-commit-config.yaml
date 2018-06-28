@@ -1,0 +1,49 @@
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    sha: v0.9.1
+    hooks:
+    -   id: check-added-large-files
+        args: ['--maxkb=1024']
+    -   id: check-case-conflict
+    -   id: check-merge-conflict
+    -   id: debug-statements
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: requirements-txt-fixer
+    -   id: autopep8-wrapper
+        exclude: migrations\/[^/]*\.py$|settings\/[^/]*\.py$|vendor\/[^/]*\.*$|assets\/[^/]*\.*$
+-   repo: https://github.com/Lucas-C/pre-commit-hooks
+    sha: v1.0.1
+    hooks:
+    -   id: forbid-crlf
+        exclude: \.csv$|\.png$|\.bat$|vendor\/
+    -   id: forbid-tabs
+        exclude: Makefile|\.bat$|vendor\/|assets\/
+-   repo: git://github.com/FalconSocial/pre-commit-python-sorter
+    sha: master
+    hooks:
+    -   id: python-import-sorter
+        exclude: migrations\/[^/]*\.py$
+-   repo: local
+    hooks:
+    -   id: prospector
+        name: Prospector
+        description: 'This hook runs Prospector: https://github.com/landscapeio/prospector'
+        entry: prospector
+        language: system
+        files: \.py$
+        exclude: migrations\/[^/]*\.py$|settings\/[^/]*\.py$
+    -   id: django-migrations
+        name: Django unmigrated changes
+        description: 'This hook checks for unmigrated model changes'
+        entry: sh -c "! django-admin makemigrations --dry-run --exit"
+        language: system
+        files: \.py$
+-   repo: https://github.com/awebdeveloper/pre-commit-prettier
+    sha: v0.0.1
+    hooks:
+    -   id: prettier
+        args:
+        - --trailing-comma=all
+        - --no-semi
+        additional_dependencies:
+        - prettier@1.4.2
