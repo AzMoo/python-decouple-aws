@@ -13,6 +13,7 @@ Installation
 Usage
 -----
 ::
+
     # Import
     from decouple import Config
     from decouple_aws import RepositoryAwsSecretManager
