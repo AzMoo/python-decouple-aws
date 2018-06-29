@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 
 dev_deps = [
     'prospector',
@@ -7,7 +7,7 @@ dev_deps = [
 setup(
     name="python-decouple-aws",
     version="0.1.0",
-    py_modules=['decouple_aws'],
+    packages=find_packages(),
     author="Matt Magin",
     author_email="matt.magin@cmv.com.au",
     description="AWS Extensions for Python Decouple",
