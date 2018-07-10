@@ -6,7 +6,7 @@ dev_deps = [
 
 setup(
     name="python-decouple-aws",
-    version="0.1.0",
+    version="0.1.1",
     packages=find_packages(),
     author="Matt Magin",
     author_email="matt.magin@cmv.com.au",
@@ -14,6 +14,7 @@ setup(
     url="https://github.com/AzMoo/python-decouple-aws",
     license="MIT",
     install_requires=[
+        'python-decouple',
         'boto3',
     ],
     python_requires='>=3.4',
