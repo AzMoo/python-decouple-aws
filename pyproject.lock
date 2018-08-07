@@ -1,0 +1,502 @@
+[[package]]
+category = "dev"
+description = "A few extensions to pyyaml."
+name = "aspy.yaml"
+optional = false
+platform = "all"
+python-versions = "*"
+version = "1.1.1"
+
+[package.dependencies]
+pyyaml = "*"
+
+[[package]]
+category = "dev"
+description = "An abstract syntax tree for Python with inference support."
+name = "astroid"
+optional = false
+platform = "*"
+python-versions = ">=3.4.*"
+version = "2.0.2"
+
+[package.dependencies]
+lazy-object-proxy = "*"
+six = "*"
+typed-ast = "*"
+typing = "*"
+wrapt = "*"
+
+[[package]]
+category = "main"
+description = "The AWS SDK for Python"
+name = "boto3"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "1.7.71"
+
+[package.dependencies]
+botocore = ">=1.10.71,<1.11.0"
+jmespath = ">=0.7.1,<1.0.0"
+s3transfer = ">=0.1.10,<0.2.0"
+
+[[package]]
+category = "main"
+description = "Low-level, data-driven core of boto 3."
+name = "botocore"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "1.10.71"
+
+[package.dependencies]
+docutils = ">=0.10"
+jmespath = ">=0.7.1,<1.0.0"
+
+[package.dependencies.python-dateutil]
+python = ">=2.7"
+version = ">=2.1,<3.0.0"
+
+[[package]]
+category = "dev"
+description = "A decorator for caching properties in classes."
+name = "cached-property"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "1.4.3"
+
+[[package]]
+category = "dev"
+description = "Validate configuration and produce human readable error messages."
+name = "cfgv"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "1.1.0"
+
+[package.dependencies]
+six = "*"
+
+[[package]]
+category = "dev"
+description = "Cross-platform colored terminal text."
+name = "colorama"
+optional = false
+platform = "UNKNOWN"
+python-versions = "*"
+version = "0.3.9"
+
+[package.requirements]
+platform = "win32"
+
+[[package]]
+category = "dev"
+description = "This library brings the updated configparser from Python 3.5 to Python 2.6-3.5."
+name = "configparser"
+optional = false
+platform = "any"
+python-versions = "*"
+version = "3.5.0"
+
+[[package]]
+category = "main"
+description = "Docutils -- Python Documentation Utilities"
+name = "docutils"
+optional = false
+platform = "OS-independent"
+python-versions = "*"
+version = "0.14"
+
+[[package]]
+category = "dev"
+description = "Dodgy: Searches for dodgy looking lines in Python code"
+name = "dodgy"
+optional = false
+platform = "UNKNOWN"
+python-versions = "*"
+version = "0.1.9"
+
+[[package]]
+category = "dev"
+description = "the modular source code checker: pep8, pyflakes and co"
+name = "flake8"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "3.5.0"
+
+[package.dependencies]
+mccabe = ">=0.6.0,<0.7.0"
+pycodestyle = ">=2.0.0,<2.4.0"
+pyflakes = ">=1.5.0,<1.7.0"
+
+[[package]]
+category = "dev"
+description = "Polyfill package for Flake8 plugins"
+name = "flake8-polyfill"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "1.0.2"
+
+[package.dependencies]
+flake8 = "*"
+
+[[package]]
+category = "dev"
+description = "Backport of the concurrent.futures package from Python 3.2"
+name = "futures"
+optional = false
+platform = "UNKNOWN"
+python-versions = "*"
+version = "3.1.1"
+
+[[package]]
+category = "dev"
+description = "File identification library for Python"
+name = "identify"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "1.1.4"
+
+[[package]]
+category = "dev"
+description = "A Python utility / library to sort Python imports."
+name = "isort"
+optional = false
+platform = "*"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "4.3.4"
+
+[package.dependencies]
+futures = "*"
+
+[[package]]
+category = "main"
+description = "JSON Matching Expressions"
+name = "jmespath"
+optional = false
+platform = "UNKNOWN"
+python-versions = "*"
+version = "0.9.3"
+
+[[package]]
+category = "dev"
+description = "A fast and thorough lazy object proxy."
+name = "lazy-object-proxy"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "1.3.1"
+
+[[package]]
+category = "dev"
+description = "McCabe checker, plugin for flake8"
+name = "mccabe"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "0.6.1"
+
+[[package]]
+category = "dev"
+description = "Node.js virtual environment builder"
+name = "nodeenv"
+optional = false
+platform = "any"
+python-versions = "*"
+version = "1.3.2"
+
+[[package]]
+category = "dev"
+description = "Check PEP-8 naming conventions, plugin for flake8"
+name = "pep8-naming"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "0.7.0"
+
+[package.dependencies]
+flake8-polyfill = ">=1.0.2,<2"
+
+[[package]]
+category = "dev"
+description = "A framework for managing and maintaining multi-language pre-commit hooks."
+name = "pre-commit"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "1.10.5"
+
+[package.dependencies]
+"aspy.yaml" = "*"
+cached-property = "*"
+cfgv = ">=1.0.0"
+identify = ">=1.0.0"
+nodeenv = ">=0.11.1"
+pyyaml = "*"
+six = "*"
+toml = "*"
+virtualenv = "*"
+
+[[package]]
+category = "dev"
+description = "Prospector: python static analysis tool"
+name = "prospector"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "1.1.1"
+
+[package.dependencies]
+dodgy = ">=0.1.9"
+mccabe = ">=0.5.0"
+pep8-naming = ">=0.3.3"
+pycodestyle = ">=2.0.0,<2.4.0"
+pydocstyle = ">=2.0.0"
+pyflakes = ">=0.8.1,<2.0.0"
+pylint = ">=2"
+pylint-plugin-utils = ">=0.2.6"
+pyyaml = "*"
+requirements-detector = ">=0.6"
+setoptconf = ">=0.2.0"
+
+[[package]]
+category = "dev"
+description = "Python style guide checker"
+name = "pycodestyle"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "2.3.1"
+
+[[package]]
+category = "dev"
+description = "Python docstring style checker"
+name = "pydocstyle"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "2.1.1"
+
+[package.dependencies]
+configparser = "*"
+six = "*"
+snowballstemmer = "*"
+
+[[package]]
+category = "dev"
+description = "passive checker of Python programs"
+name = "pyflakes"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "1.6.0"
+
+[[package]]
+category = "dev"
+description = "python code static checker"
+name = "pylint"
+optional = false
+platform = "*"
+python-versions = ">=3.4.*"
+version = "2.1.1"
+
+[package.dependencies]
+astroid = ">=2.0.0"
+isort = ">=4.2.5"
+mccabe = "*"
+
+[package.dependencies.colorama]
+platform = "win32"
+version = "*"
+
+[[package]]
+category = "dev"
+description = "Utilities and helpers for writing Pylint plugins"
+name = "pylint-plugin-utils"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "0.4"
+
+[package.dependencies]
+pylint = "*"
+
+[[package]]
+category = "main"
+description = "Extensions to the standard Python datetime module"
+name = "python-dateutil"
+optional = false
+platform = "*"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+version = "2.7.3"
+
+[package.dependencies]
+six = ">=1.5"
+
+[package.requirements]
+python = ">=2.7"
+
+[[package]]
+category = "main"
+description = "Strict separation of settings from code."
+name = "python-decouple"
+optional = false
+platform = "any"
+python-versions = "*"
+version = "3.1"
+
+[[package]]
+category = "dev"
+description = "YAML parser and emitter for Python"
+name = "pyyaml"
+optional = false
+platform = "Any"
+python-versions = "*"
+version = "3.13"
+
+[[package]]
+category = "dev"
+description = "Python tool to find and list requirements of a Python project"
+name = "requirements-detector"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "0.6"
+
+[package.dependencies]
+astroid = ">=1.4"
+
+[[package]]
+category = "main"
+description = "An Amazon S3 Transfer Manager"
+name = "s3transfer"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "0.1.13"
+
+[package.dependencies]
+botocore = ">=1.3.0,<2.0.0"
+
+[[package]]
+category = "dev"
+description = "A module for retrieving program settings from various sources in a consistant method."
+name = "setoptconf"
+optional = false
+platform = "UNKNOWN"
+python-versions = "*"
+version = "0.2.0"
+
+[[package]]
+category = "main"
+description = "Python 2 and 3 compatibility utilities"
+name = "six"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "1.11.0"
+
+[[package]]
+category = "dev"
+description = "This package provides 16 stemmer algorithms (15 + Poerter English stemmer) generated from Snowball algorithms."
+name = "snowballstemmer"
+optional = false
+platform = "UNKNOWN"
+python-versions = "*"
+version = "1.2.1"
+
+[[package]]
+category = "dev"
+description = "Python Library for Tom's Obvious, Minimal Language"
+name = "toml"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "0.9.4"
+
+[[package]]
+category = "dev"
+description = "a fork of Python 2 and 3 ast modules with type comment support"
+name = "typed-ast"
+optional = false
+platform = "POSIX"
+python-versions = "*"
+version = "1.1.0"
+
+[[package]]
+category = "dev"
+description = "Type Hints for Python"
+name = "typing"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "3.6.4"
+
+[[package]]
+category = "dev"
+description = "Virtual Python Environment builder"
+name = "virtualenv"
+optional = false
+platform = "*"
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
+version = "16.0.0"
+
+[[package]]
+category = "dev"
+description = "Module for decorators, wrappers and monkey patching."
+name = "wrapt"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "1.10.11"
+
+[metadata]
+content-hash = "a70626140e4cec02f3c8ebd4b1ab8bfdc32d9a1ce55389f5c4012bc857b40d42"
+platform = "*"
+python-versions = "^3.4"
+
+[metadata.hashes]
+"aspy.yaml" = ["04d26279513618f1024e1aba46471db870b3b33aef204c2d09bcf93bea9ba13f", "0a77e23fafe7b242068ffc0252cee130d3e509040908fc678d9d1060e7494baa"]
+astroid = ["a48b57ede295c3188ef5c84273bc2a8eadc46e4cbb001eae0d49fb5d1fabbb19", "d066cdeec5faeb51a4be5010da612680653d844b57afd86a5c8315f2f801b4cc"]
+boto3 = ["1fb25a1d8455b97276ef5f1e14255c04f59a985a14ddb69804ddf6c8a3449e08", "71ee5169b6957298fb178b294452592cd7c734e5c0d1a67487b56f993085f254"]
+botocore = ["9302ad235db66efa9d11c664b1cb0b259826d82a206446460ea05bcfcc431a4a", "ffa673c9a53f3ab4eba4ce8cf9d736177ca67509827e716cb5070f0b621fb0a7"]
+cached-property = ["630fdbf0f4ac7d371aa866016eba1c3ac43e9032246748d4994e67cb05f99bc4", "f1f9028757dc40b4cb0fd2234bd7b61a302d7b84c683cb8c2c529238a24b8938"]
+cfgv = ["73f48a752bd7aab103c4b882d6596c6360b7aa63b34073dd2c35c7b4b8f93010", "d1791caa9ff5c0c7bce80e7ecc1921752a2eb7c2463a08ed9b6c96b85a2f75aa"]
+colorama = ["463f8483208e921368c9f306094eb6f725c6ca42b0f97e313cb5d5512459feda", "48eb22f4f8461b1df5734a074b57042430fb06e1d61bd1e11b078c0fe6d7a1f1"]
+configparser = ["5308b47021bc2340965c371f0f058cc6971a04502638d4244225c49d80db273a"]
+docutils = ["02aec4bd92ab067f6ff27a38a38a41173bf01bed8f89157768c1573f53e474a6", "51e64ef2ebfb29cae1faa133b3710143496eca21c530f3f71424d77687764274", "7a4bd47eaf6596e1295ecb11361139febe29b084a87bf005bf899f9a42edc3c6"]
+dodgy = ["65e13cf878d7aff129f1461c13cb5fd1bb6dfe66bb5327e09379c3877763280c"]
+flake8 = ["7253265f7abd8b313e3892944044a365e3f4ac3fcdcfb4298f55ee9ddf188ba0", "c7841163e2b576d435799169b78703ad6ac1bbb0f199994fc05f700b2a90ea37"]
+flake8-polyfill = ["12be6a34ee3ab795b19ca73505e7b55826d5f6ad7230d31b18e106400169b9e9", "e44b087597f6da52ec6393a709e7108b2905317d0c0b744cdca6208e670d8eda"]
+futures = ["51ecb45f0add83c806c68e4b06106f90db260585b25ef2abfcda0bd95c0132fd", "c4884a65654a7c45435063e14ae85280eb1f111d94e542396717ba9828c4337f"]
+identify = ["49845e70fc6b1ec3694ab930a2c558912d7de24548eebcd448f65567dc757c43", "68daab16a3db364fa204591f97dc40bfffd1a7739f27788a4895b4d8fd3516e5"]
+isort = ["1153601da39a25b14ddc54955dbbacbb6b2d19135386699e2ad58517953b34af", "b9c40e9750f3d77e6e4d441d8b0266cf555e7cdabdcff33c4fd06366ca761ef8", "ec9ef8f4a9bc6f71eec99e1806bfa2de401650d996c59330782b89a5555c1497"]
+jmespath = ["6a81d4c9aa62caf061cb517b4d9ad1dd300374cd4706997aff9cd6aedd61fc64", "f11b4461f425740a1d908e9a3f7365c3d2e569f6ca68a2ff8bc5bcd9676edd63"]
+lazy-object-proxy = ["0ce34342b419bd8f018e6666bfef729aec3edf62345a53b537a4dcc115746a33", "1b668120716eb7ee21d8a38815e5eb3bb8211117d9a90b0f8e21722c0758cc39", "209615b0fe4624d79e50220ce3310ca1a9445fd8e6d3572a896e7f9146bbf019", "27bf62cb2b1a2068d443ff7097ee33393f8483b570b475db8ebf7e1cba64f088", "27ea6fd1c02dcc78172a82fc37fcc0992a94e4cecf53cb6d73f11749825bd98b", "2c1b21b44ac9beb0fc848d3993924147ba45c4ebc24be19825e57aabbe74a99e", "2df72ab12046a3496a92476020a1a0abf78b2a7db9ff4dc2036b8dd980203ae6", "320ffd3de9699d3892048baee45ebfbbf9388a7d65d832d7e580243ade426d2b", "50e3b9a464d5d08cc5227413db0d1c4707b6172e4d4d915c1c70e4de0bbff1f5", "5276db7ff62bb7b52f77f1f51ed58850e315154249aceb42e7f4c611f0f847ff", "61a6cf00dcb1a7f0c773ed4acc509cb636af2d6337a08f362413c76b2b47a8dd", "6ae6c4cb59f199d8827c5a07546b2ab7e85d262acaccaacd49b62f53f7c456f7", "7661d401d60d8bf15bb5da39e4dd72f5d764c5aff5a86ef52a042506e3e970ff", "7bd527f36a605c914efca5d3d014170b2cb184723e423d26b1fb2fd9108e264d", "7cb54db3535c8686ea12e9535eb087d32421184eacc6939ef15ef50f83a5e7e2", "7f3a2d740291f7f2c111d86a1c4851b70fb000a6c8883a59660d95ad57b9df35", "81304b7d8e9c824d058087dcb89144842c8e0dea6d281c031f59f0acf66963d4", "933947e8b4fbe617a51528b09851685138b49d511af0b6c0da2539115d6d4514", "94223d7f060301b3a8c09c9b3bc3294b56b2188e7d8179c762a1cda72c979252", "ab3ca49afcb47058393b0122428358d2fbe0408cf99f1b58b295cfeb4ed39109", "bd6292f565ca46dee4e737ebcc20742e3b5be2b01556dafe169f6c65d088875f", "cb924aa3e4a3fb644d0c463cad5bc2572649a6a3f68a7f8e4fbe44aaa6d77e4c", "d0fc7a286feac9077ec52a927fc9fe8fe2fabab95426722be4c953c9a8bede92", "ddc34786490a6e4ec0a855d401034cbd1242ef186c20d79d2166d6a4bd449577", "e34b155e36fa9da7e1b7c738ed7767fc9491a62ec6af70fe9da4a057759edc2d", "e5b9e8f6bda48460b7b143c3821b21b452cb3a835e6bbd5dd33aa0c8d3f5137d", "e81ebf6c5ee9684be8f2c87563880f93eedd56dd2b6146d8a725b50b7e5adb0f", "eb91be369f945f10d3a49f5f9be8b3d0b93a4c2be8f8a5b83b0571b8123e0a7a", "f460d1ceb0e4a5dcb2a652db0904224f367c9b3c1470d5a7683c0480e582468b"]
+mccabe = ["ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42", "dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"]
+nodeenv = ["aa040ab5189bae17d272175609010be6c5b589ec4b8dbd832cc50c9e9cb7496f"]
+pep8-naming = ["360308d2c5d2fff8031c1b284820fbdb27a63274c0c1a8ce884d631836da4bdd", "624258e0dd06ef32a9daf3c36cc925ff7314da7233209c5b01f7e5cdd3c34826"]
+pre-commit = ["c1472b0d73e27a5697a477f77a4973c708da4fc433cc89648e8612c8cd623b87", "ec206de6fbcbd9381ff3169f9975571fb2efa99794c328518a5f0c06ae0b49c5"]
+prospector = ["e1e848807b589f1c02f0b2e3d3ea4e2ddd898da3e681e6fb4812b06ffa278598", "e2e62b656cca5610d397d7dfe76288e9284283be1b551e0495dd6a823390db65"]
+pycodestyle = ["682256a5b318149ca0d2a9185d365d8864a768a28db66a84a2ea946bcc426766", "6c4245ade1edfad79c3446fadfc96b0de2759662dc29d07d80a6f27ad1ca6ba9"]
+pydocstyle = ["08a870edc94508264ed90510db466c6357c7192e0e866561d740624a8fc7d90c", "4d5bcde961107873bae621f3d580c3e35a426d3687ffc6f8fb356f6628da5a97", "af9fcccb303899b83bec82dc9a1d56c60fc369973223a5e80c3dfa9bdf984405"]
+pyflakes = ["08bd6a50edf8cffa9fa09a463063c425ecaaf10d1eb0335a7e8b1401aef89e6f", "8d616a382f243dbf19b54743f280b80198be0bca3a5396f1d2e1fca6223e8805"]
+pylint = ["1d6d3622c94b4887115fe5204982eee66fdd8a951cf98635ee5caee6ec98c3ec", "31142f764d2a7cd41df5196f9933b12b7ee55e73ef12204b648ad7e556c119fb"]
+pylint-plugin-utils = ["8ad25a82bcce390d1d6b7c006c123e0cb18051839c9df7b8bdb7823c53fe676e"]
+python-dateutil = ["1adb80e7a782c12e52ef9a8182bebeb73f1d7e24e374397af06fb4956c8dc5c0", "e27001de32f627c22380a688bcc43ce83504a7bc5da472209b4c70f02829f0b8"]
+python-decouple = ["1317df14b43efee4337a4aa02914bf004f010cd56d6c4bd894e6474ec8c4fe2d"]
+pyyaml = ["3d7da3009c0f3e783b2c873687652d83b1bbfd5c88e9813fb7e5b03c0dd3108b", "3ef3092145e9b70e3ddd2c7ad59bdd0252a94dfe3949721633e41344de00a6bf", "40c71b8e076d0550b2e6380bada1f1cd1017b882f7e16f09a65be98e017f211a", "558dd60b890ba8fd982e05941927a3911dc409a63dcb8b634feaa0cda69330d3", "a7c28b45d9f99102fa092bb213aa12e0aaf9a6a1f5e395d36166639c1f96c3a1", "aa7dd4a6a427aed7df6fb7f08a580d68d9b118d90310374716ae90b710280af1", "bc558586e6045763782014934bfaf39d48b8ae85a2713117d16c39864085c613", "d46d7982b62e0729ad0175a9bc7e10a566fc07b224d2c79fafb5e032727eaa04", "d5eef459e30b09f5a098b9cea68bebfeb268697f78d647bd255a085371ac7f3f", "e01d3203230e1786cd91ccfdc8f8454c8069c91bee3962ad93b87a4b2860f537", "e170a9e6fcfd19021dd29845af83bb79236068bf5fd4df3327c1be18182b2531"]
+requirements-detector = ["9fbc4b24e8b7c3663aff32e3eba34596848c6b91bd425079b386973bd8d08931"]
+s3transfer = ["90dc18e028989c609146e241ea153250be451e05ecc0c2832565231dacdf59c1", "c7a9ec356982d5e9ab2d4b46391a7d6a950e2b04c472419f5fdec70cc0ada72f"]
+setoptconf = ["5b0b5d8e0077713f5d5152d4f63be6f048d9a1bb66be15d089a11c898c3cf49c"]
+six = ["70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9", "832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb"]
+snowballstemmer = ["919f26a68b2c17a7634da993d91339e288964f93c274f1343e3bbbe2096e1128", "9f3bcd3c401c3e862ec0ebe6d2c069ebc012ce142cce209c098ccb5b09136e89"]
+toml = ["8e86bd6ce8cc11b9620cb637466453d94f5d57ad86f17e98a98d1f73e3baab2d"]
+typed-ast = ["0948004fa228ae071054f5208840a1e88747a357ec1101c17217bfe99b299d58", "10703d3cec8dcd9eef5a630a04056bbc898abc19bac5691612acba7d1325b66d", "1f6c4bd0bdc0f14246fd41262df7dfc018d65bb05f6e16390b7ea26ca454a291", "25d8feefe27eb0303b73545416b13d108c6067b846b543738a25ff304824ed9a", "29464a177d56e4e055b5f7b629935af7f49c196be47528cc94e0a7bf83fbc2b9", "2e214b72168ea0275efd6c884b114ab42e316de3ffa125b267e732ed2abda892", "3e0d5e48e3a23e9a4d1a9f698e32a542a4a288c871d33ed8df1b092a40f3a0f9", "519425deca5c2b2bdac49f77b2c5625781abbaf9a809d727d3a5596b30bb4ded", "57fe287f0cdd9ceaf69e7b71a2e94a24b5d268b35df251a88fef5cc241bf73aa", "668d0cec391d9aed1c6a388b0d5b97cd22e6073eaa5fbaa6d2946603b4871efe", "68ba70684990f59497680ff90d18e756a47bf4863c604098f10de9716b2c0bdd", "6de012d2b166fe7a4cdf505eee3aaa12192f7ba365beeefaca4ec10e31241a85", "79b91ebe5a28d349b6d0d323023350133e927b4de5b651a8aa2db69c761420c6", "8550177fa5d4c1f09b5e5f524411c44633c80ec69b24e0e98906dd761941ca46", "898f818399cafcdb93cbbe15fc83a33d05f18e29fb498ddc09b0214cdfc7cd51", "94b091dc0f19291adcb279a108f5d38de2430411068b219f41b343c03b28fb1f", "a26863198902cda15ab4503991e8cf1ca874219e0118cbf07c126bce7c4db129", "a8034021801bc0440f2e027c354b4eafd95891b573e12ff0418dec385c76785c", "bc978ac17468fe868ee589c795d06777f75496b1ed576d308002c8a5756fb9ea", "c05b41bc1deade9f90ddc5d988fe506208019ebba9f2578c622516fd201f5863", "c9b060bd1e5a26ab6e8267fd46fc9e02b54eb15fffb16d112d4c7b1c12987559", "edb04bdd45bfd76c8292c4d9654568efaedf76fe78eb246dde69bdb13b2dad87", "f19f2a4f547505fe9072e15f6f4ae714af51b5a681a97f187971f50c283193b6"]
+typing = ["3a887b021a77b292e151afb75323dea88a7bc1b3dfa92176cff8e44c8b68bddf", "b2c689d54e1144bbcfd191b0832980a21c2dbcf7b5ff7a66248a60c90e951eb8", "d400a9344254803a2368533e4533a4200d21eb7b6b729c173bc38201a74db3f2"]
+virtualenv = ["2ce32cd126117ce2c539f0134eb89de91a8413a29baac49cbab3eb50e2026669", "ca07b4c0b54e14a91af9f34d0919790b016923d157afda5efdde55c96718f752"]
+wrapt = ["d4d560d479f2c21e1b5443bbd15fe7ec4b37fe7e53d335d3b9b0a7b1226fe3c6"]
