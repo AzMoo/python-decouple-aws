@@ -1,10 +1,13 @@
 [tool.poetry]
 name = "python-decouple-aws"
-version = "0.2.0"
+version = "0.2.1"
 description = "AWS Extensions for Python Decouple"
 authors = ["Matt Magin <matt.magin@cmv.com.au>"]
 license = "MIT"
 repository = "https://github.com/AzMoo/python-decouple-aws"
+packages = [
+    { include = "decouple_aws" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.4"
