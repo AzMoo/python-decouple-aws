@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 
 def get_config(source, region):
-    """ Get config object but fallback to AutoConfig if AWS connection fails """
+    """ Get config object but fallback to AutoConfig if AWS connection fails"""
     try:
         logger.debug(
             'Querying AWS Secrets manager for %s in region %s', source, region)
