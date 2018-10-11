@@ -6,11 +6,11 @@ Python Decouple AWS
     :alt: Latest PyPI version
 
 
-*Pytho Decouple AWS* helps you to organize and access sensitive information on AWS Secrets Manager.
+*Python Decouple AWS* helps you to organize and access sensitive information on AWS Secrets Manager.
 
 It also makes it easy for you to:
 
-#. Do not repeat the boto3 boiler place code;
+#. Not repeat the boto3 boilerplate code;
 #. Define default values;
 #. Use os.environ as fall back;
 
@@ -18,7 +18,7 @@ It also makes it easy for you to:
 Why
 ------------
 
-- Have only one place to save all passwords (AWS Secrets Manager)
+- Single place to save all secrets (AWS Secrets Manager)
 - Keep sensitive information away from code and environments
 - Simpler API to access AWS Secrets Manager (rather than boto3)
 
