@@ -85,6 +85,19 @@ def test_should_raise_NoCredentialsError_with_no_credentials():
         assert config is None
 
 
+def test_should_raise_NoCredentialsError_using_the_default_api():
+    """
+    Test if users can handle errors direclty when necessary
+    using a default api rather than be forced to instantiate RepositoryAwsSecretManager
+    """
+    # Given no Credentials
+
+    with pytest.raises(NoCredentialsError):
+        config = get_config('myproject/secrets', 'ap-southeast-2', fail=True)
+
+        assert config is None
+
+
 def test_should_use_environment_as_first_option():
     """ Test if ENVIRONMENT variable is the first option """
     with mock.patch('decouple_aws.repository.boto3') as boto3:
