@@ -1,0 +1,2 @@
+class AWSException(RuntimeError):
+    pass

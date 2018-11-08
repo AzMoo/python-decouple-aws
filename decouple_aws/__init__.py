@@ -1,8 +1,8 @@
 import logging
 
 from decouple import AutoConfig, Config
-from botocore.exceptions import BotoCoreError
 
+from .exceptions import AWSException
 from .repository import RepositoryAwsSecretManager
 
 # We do this assertion so pyflakes doesn't complain
@@ -20,7 +20,7 @@ def get_config(source, region):
         logger.debug('Successfully queried for %s in region %s',
                      source, region)
         return Config(repo)
-    except BotoCoreError as e:
+    except AWSException as e:
         logger.error(
             'Failed retrieving secrets from AWS Secrets Manager: %s', e)
         return AutoConfig()
