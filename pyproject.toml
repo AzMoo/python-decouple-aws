@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-decouple-aws"
-version = "0.3.0"
+version = "0.3.1"
 description = "AWS Extensions for Python Decouple"
 authors = ["Matt Magin <matt.magin@cmv.com.au>"]
 license = "MIT"

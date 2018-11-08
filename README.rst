@@ -14,6 +14,7 @@ It also makes it easy for you to:
 #. Define default values;
 #. Use os.environ as fall back;
 
+Supports Python 3.4+
 
 Why
 ------------
