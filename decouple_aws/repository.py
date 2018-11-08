@@ -2,6 +2,7 @@ import json
 import os
 
 import boto3
+from botocore.exceptions import BotoCoreError
 
 from .exceptions import AWSException
 
@@ -20,7 +21,7 @@ class RepositoryAwsSecretManager:
             parsed_secrets = json.loads(response['SecretString'])
             for k, v in parsed_secrets.items():
                 self.data[k] = v
-        except self.client.exceptions.ClientError as e:
+        except (self.client.exceptions.ClientError, BotoCoreError) as e:
             raise AWSException(str(e)) from e
 
     def __contains__(self, key):
